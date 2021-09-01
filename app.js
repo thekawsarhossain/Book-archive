@@ -52,7 +52,7 @@ const displayResults = books => {
     // update the found results count
     searchDetails.innerText = `Showing ${totalELements} Result's of ${books.numFound}`;
 
-    // api error handling here
+    // api error handling here if search input not matched 
     if(books.numFound === 0){
         console.log('hi');
         searchDetails.innerText = `No Result's Found !`;
