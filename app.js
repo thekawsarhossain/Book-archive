@@ -14,7 +14,7 @@ document.getElementById('search-button').addEventListener('click', getSearchValu
         booksContainer.textContent = '';
     }else{
     // fetching data here
-    const url = (`http://openlibrary.org/search.json?q=${searchText.value}`);
+    const url = (`https://openlibrary.org/search.json?q=${searchText.value}`);
     fetch(url)
     .then(response => response.json())
     .then(data => displayResults(data))
