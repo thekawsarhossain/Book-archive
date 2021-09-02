@@ -54,7 +54,6 @@ const displayResults = books => {
 
     // api error handling here if search input not matched 
     if(books.numFound === 0){
-        console.log('hi');
         searchDetails.innerText = `No Result's Found !`;
     }
 }
