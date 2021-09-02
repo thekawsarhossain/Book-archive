@@ -36,9 +36,10 @@ const displayResults = books => {
         <div class="card h-100">
         <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h4 class="card-title">Book Name: ${book.title}</h4>
-          <h6 class="card-text">Publisher: ${book.author_name === undefined ? 'Unknown' : book.author_name[0]}</h6>
-          <h6 class="card-text">Published Year: ${book.first_publish_year === undefined ? 'Unknown' : book.first_publish_year}</h6>
+          <h4 class="card-title"><strong>Book Name</strong>: ${book.title}</h4>
+          <h6 class="card-text"><strong>Author</strong>: ${book.author_name === undefined ? 'Unknown' : book.author_name[0]}</h6>
+          <h6 class="card-text"><strong>publisher</strong>: ${book.publisher === undefined ? 'Unknown' : book.publisher[0]}</h6>
+          <h6 class="card-text"><strong>Published Year</strong>: ${book.first_publish_year === undefined ? 'Unknown' : book.first_publish_year}</h6>
         </div>
       </div>
         `;
